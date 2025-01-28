@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(telebot src/main.cpp src/EventQueueTelegram.cpp src/EventQueueVM.cpp src/Quest.cpp)
+add_executable(testunit src/testunit.cpp)
 
 find_package(nlohmann_json 3.7.3 REQUIRED)
 find_package(OpenSSL REQUIRED)
