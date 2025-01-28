@@ -105,8 +105,8 @@ int main() {
         ]
     })";
 
-    const std::string token = getenv("TELEGRAM_TOKEN");
-        if (token.empty()) {
+    const char* token = getenv("TELEGRAM_TOKEN");
+        if (!token) {
             std::cerr << "Telegram token not found in environment variable TELEGRAM_TOKEN" << std::endl;
             return 1;
         }
